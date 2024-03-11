@@ -1,12 +1,87 @@
+:host {
+    --content-padding: 10px;
+}
+
+.content {
+    padding: var(--content-padding);
+}
+
 .breaks-container {
     display: flex;
     flex-direction: column;
     border: 5px solid black;
     background-color: white;
     width: 750px;
-    height: 350px;
+    height: 400px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: var(--content-padding);
     margin-top: 20px;
+}
+
+.breaks-button-1, .breaks-button-2 {
+    /*display: inline-block;*/
+    padding: 10px 20px;
+    color: white; /* black text */
+    background-color: #D81E05; /* your chosen color */
+    border: 1px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* transition for hover effect */
+    text-align: center;
+    text-decoration: none;
+    outline: none; /* remove default outline */
+    margin-bottom: 20px;
+}
+
+/* Hover effect */
+.breaks-button-1:hover, .breaks-button-2:hover {
+    background-color: #a61704;
+    color: white;
+}
+
+.breaks-button-1:focus, .breaks-button-2:focus {
+    background-color: #a61704;
+    color: white;
+}
+
+/* Optional: Disable state styling */
+.breaks-button-1:disabled, .breaks-button-2:disabled {
+    background-color: #c0c0c0; /* gray background */
+    cursor: not-allowed; /* change cursor */
+}
+
+.breaks-row-2, .breaks-row-3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 700px;
+}
+
+.breaks-row-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.breaks-row-2 {
+    height: 60px;
+}
+
+.breaks-button-2 {
+    margin-top: 20px;
+}
+
+.breaks-row-2, .breaks-row-3 {
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 20px;
 }
