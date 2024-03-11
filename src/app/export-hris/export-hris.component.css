@@ -2,12 +2,6 @@
     --content-padding: 10px;
 }
 
-h3 {
-    height: 10px;
-    padding: var(--content-padding);
-    text-align: center;
-}
-
 .content {
     padding: var(--content-padding);
 }
@@ -50,35 +44,44 @@ h3 {
     border: 5px solid black;
     background-color: white;
     width: 750px;
-    height: 350px;
+    height: 400px;
     align-items: center;
     justify-content: flex-start;
     padding: var(--content-padding);
     margin-top: 20px;
 }
 
-.hris-row-1, .hris-row-2, .hris-row-3 {
+.hris-row-2, .hris-row-3, .hris-row-4 {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 700px;
 }
 
 .hris-row-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    width: 700px;
     justify-content: center;
     align-items: center;
+}
+
+.hris-row-2 {
+    height: 60px;
 }
 
 .hris-button-2 {
     margin-top: 20px;
 }
 
-.hris-row-2, .hris-row-3 {
+.hris-row-2, .hris-row-3, .hris-row-4 {
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 5px;
 }
 
 input[type="number"] {
-    width: 80px;
+    width: 50px;
+    height: 20px;
 }
