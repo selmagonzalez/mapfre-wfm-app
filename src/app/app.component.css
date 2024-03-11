@@ -1,0 +1,31 @@
+:host {
+    --content-padding: 10px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    height: auto;
+    padding: var(--content-padding);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.content {
+    padding: var(--content-padding);
+}
+
+img {
+    max-width: 10%;
+    max-height: 10%;
+    padding: var(--content-padding);
+    padding-bottom: 30px;
+    margin-top: 0.67em;
+}
